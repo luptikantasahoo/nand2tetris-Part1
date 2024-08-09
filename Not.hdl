@@ -1,0 +1,7 @@
+CHIP Not {
+
+IN in;
+OUT out;
+
+Nand(a=true, b=in, out=out);
+}
