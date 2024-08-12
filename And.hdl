@@ -1,0 +1,10 @@
+// And.hdl
+CHIP And {
+    IN a, b;
+    OUT out;
+
+    PARTS:
+    // Implement AND gate using NAND and NOT gates
+    Nand(a=a, b=b, out=tmp1);
+    Nand(a=tmp1, b=tmp1, out=out);
+}
